@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그 정리</title>
+</head>
+<body>
+    <form action="action.php">
+        <h3>이메일 주소는?</h3>
+        <input type="email" name="" id="" required placeholder="abc@abc".com><br>
+                                        <!-- required을 통해 이메일의 유효성 검사를 할 수 있음 -->
+        <input type="submit"><br> <input type="reset"><br>
+        <input type="url" name="" id="" required placeholder="http://www.abc.com".com>
+                                            <!-- 마찬가지로 required를 통해 url 유효성 검사 가능함 -->
+    </form>
+
+    <form action="">
+        <h3>당신의 성별은?</h3>
+        <input type="radio" name="gender" id="">여성
+        <input type="radio" name="gender">남성
+        <!-- 한 쪽만 선택할 수 있음(단,name값을 똑같이 줘야 함) -->
+
+        <h3>당신의 취미를 2가지 선택해 주세요</h3>
+        <input type="checkbox" name="game" id=""> 게임
+        <input type="checkbox" name="mung" id=""> 멍
+        <input type="checkbox" name="tv" id=""> tv보기
+        <input type="checkbox" name="shopping" id=""> 쇼핑
+        <input type="checkbox" name="reading" id=""> 리딩
+        <input type="checkbox" name="riding" id=""> 라이딩
+        <input type="checkbox" name="snowboard" id=""> 스노우보드
+        <!-- 복수 선택이 가능함(단,name값이 다름) -->
+    </form>
+    <br>
+    <form action="">
+        <input type="file" name="" id=""><br><br>
+
+        <textarea name="" id="" cols="40" rows="15"></textarea>
+        <!-- 이 태그는 시작태그와 끝태그에 공백이 생길 경우, 글자 입력란이 첫 줄에 입력이 불가능함 -->
+        <br><br>
+
+        <button>로그인</button> <button>취소</button><br><br>
+        <!-- 자바스크립트로 기능을 묶을 수 있음. form태그와 달리 보여지는 부분만 있는 거다. -->
+         <!-- 즉, 기능을 못한다는 뜻 -->
+        <input type="number" name="" id="" step="5"><br><br>
+        <!-- "step"을 통해 숫자값의 단위를 정할 수 있음 -->
+         <input type="range" name="" id=""><br><br>
+         <input type="tel">
+    </form>
+</body>
+</html>

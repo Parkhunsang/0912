@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라바메뉴 만들기</title>
+    <style>
+        .nav {
+            position: relative;
+            margin: 50px 0;
+            width: 700px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid red;
+        }
+
+        .nav a {
+            display: block;
+            /* 보통 a 태그가 있으면, block을 줌. 클릭 이슈로 인해서.. */
+            float: left;
+            padding: 16px 0 30px;
+            width: 20%;
+            text-decoration: none;
+            font-size: 16px;
+            color: #555;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #8ac007;
+        }
+
+        .effect {
+            position: absolute;
+            left: -12.5%; 
+            /* 정확한 수치값은 의미가 없음. 왜냐면 '-'자체에 의미가 있기 때문 */
+            width: 70px;
+            height: 3px;
+            background: #8ac007;
+            transition: 0.3s;
+            bottom: 20px;
+            margin-left: -35px;
+        }
+
+        .nav a:nth-child(1):hover ~ .effect {
+            left: 10%;
+        }
+
+        .nav a:nth-child(2):hover ~ .effect {
+            left: 30%;
+        }
+
+        .nav a:nth-child(3):hover ~ .effect {
+            left: 50%;
+        }
+
+        .nav a:nth-child(4):hover ~ .effect {
+            left: 70%;
+        }
+
+        .nav a:nth-child(5):hover ~ .effect {
+            left: 90%;
+        }
+        /* 효과를 주기 위해서는 형제 요소로 묶여 있어야 되는 것
+        그래서 형제요소를 정하는 '~'를 사용하는 것이다. */
+    </style>
+</head>
+<body>
+    <div class="nav line">
+        <a href="#">html</a>
+        <a href="#">css</a>
+        <a href="#">Javascript</a>
+        <a href="#">JQuery</a>
+        <a href="#">portfolio</a>
+        <div class="effect"></div>
+    </div>
+
+   <!-- 집에서 .nav a:nth-child(5):hover ~ .effect 입력 전 태그랑 후를
+   비교해보기. 왜냐면 수치값을 어떻게 주는 지에 대해 알아야하기 때문 -->
+</body>
+</html>

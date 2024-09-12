@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset css에 대해서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            /* 기능 검색해보기.. */
+        }
+
+        body {
+            font-family: "맑은고딕", 돋움, 돋음체, 굴림, 굴림체;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        /* 보통 body에는 이런 속성들이 들어감 */
+
+        모든 시멘틱 태그 {
+            display: block;
+        }
+        /* 모든 시멘틱 태그들에게는 디스플레이 블락을 줌 */
+
+        ul, ol, dl {
+            list-style: none;
+        }
+
+        body {
+            overflow-x: hidden;
+            /* overflow 태그는 스크롤과 관련이 있다
+            게다가 hidden일 경우, 안 보이게 한다는 의미이다.
+            (넘치는 부분에 대해서 가려준다는 의미) */
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            /* 보더와 보더간의 간격을 의미한다. */
+        }
+
+        input, select {
+            vertical-align: center;
+            /* 검색창 내 커서의 위치가 검색창 위 아래 중에서 가운데 값을 설정해줌 */
+        } 
+
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>오늘의 날씨는?</dt>
+        <dd>비</dd>
+        <dd>가</dd>
+        <dd>온</dd>
+        <dd>다</dd>
+        <dd>흙</dd>
+    </dl>
+
+    <select name="" id="">
+    <option value="">연세대</option>
+     <option value="">서울대</option>
+    <option value="">고려대</option>
+    <option value="">서강대</option>
+    <option value="">한양대</option>
+    </select>
+</body>
+</html>

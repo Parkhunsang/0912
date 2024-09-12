@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스쉐도우</title>
+    <style>
+        div {
+            width: 350px;
+            height: 40px;
+            box-shadow: 2px 2px 5px rgb(0,0,0.5);
+                     /* x축 y축 쉐도우량 */
+                     /* inset 안쪽으로 쉐도우 생김 */
+                     
+            border-radius: 20px;
+            background: #ccc;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <form action="action.php">
+        <h1>회원 로그인</h1>
+        <label>아이디 : <input type="text" placeholder="아이디입력" autocomplete="off"></label><br>
+        <!-- autocomplete="off" 자동으로 아이디가 입력되는 걸 off한다. -->
+        패스워드 : <input type="password" placeholder="비밀번호입력"><br>
+        <input type="submit" value="로그인"> <input type="reset">
+        <!-- value="" 를 통해 이름을 바꿀 수 있음 -->
+        <!-- form태그가 있어야 서버와 접촉이 가능함!! 즉, 꼭 적어야 한다!! -->
+    </form>
+
+    <form action="action2.php">
+        <input type="color" name="" id=""><br>
+        <input type="date" name="" id=""><br>
+        <!-- 모양 바꾸는 건 css로 불가. 자바스크립트로 가능함! -->
+         <input type="datetime" name="" id=""><br>
+         <!-- 브라우저 중 사파리에서 볼 수 있음 -->
+          <input type="datetime-local" name="" id=""><br>
+          <!-- 현지의 시간을 알려줌 -->
+        <input type="week" name="" id=""><br>
+
+
+    </form>
+</body>
+</html>
